@@ -1,144 +1,110 @@
-<!-------------------------------------------------------------------------------------
-*
-* MIT License
-* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in all
-* copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Hiran Venugopalan" property="og:site_name" />
-    <meta
-        content="Product and Type Designer | UI UX | Design Mentoring"
-        property="og:description">
-      <meta content="http://localhost:4000/about/" property="article:author">
-      <meta property="og:image" content="../assets/img/OGImg.png">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
-        rel="stylesheet"><meta content="Modersohn und Zobel" property="og:title">
-      <meta content="article" property="og:type">
-      <meta content="http://localhost:4000/texte/modersohn-und-zobel" property="og:url"><title>Modersohn und Zobel - Verlag Federwerkstatt</title>
-      <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
-      <link rel="canonical" href="http://localhost:4000/texte/modersohn-und-zobel" />
-      <link rel="apple-touch-icon" href="/assets/img/profile.png">
-      <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16" />
-      <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default" />
-      <link href="/assets/css/main.css" rel="stylesheet" media="all" class="default" />
-      <link href="/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
-      <link href="/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
-      <!--[if IE]>
-        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
-      <![endif]-->
-      <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
-      <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
-    </head>
-    <body>
-      <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" style="padding: 0;"; href="/index.html">
-              <div class="logo">
-                <img src='/assets/img/headerpic.gif'/>
+    <meta content="http://localhost:4000/about/" property="article:author">
+    <meta property="og:image" content="../assets/img/OGImg.png"><meta content="Modersohn und Zobel" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://localhost:4000/texte/modersohn-und-zobel" property="og:url"><title>Modersohn und Zobel - Verlag Federwerkstatt</title>
+    <link rel="canonical" href="http://localhost:4000/texte/modersohn-und-zobel" />
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default" />
+    <link href="/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" style="padding: 0;"; href="/index.html">
+            <div class="logo">
+              <img src='/assets/img/headerpic.gif'/>
+            </div>
+            <script src="/assets/js/modeswitcher.js"></script>
+            <script src="/assets/js/Hamburger.js"></script>
+            <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                  </span>
+                </a>
               </div>
-              <script src="/assets/js/modeswitcher.js"></script>
-              <script src="/assets/js/Hamburger.js"></script>
-              <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            </div>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a href="/post/aus-dem-land-der-asen" class="navbar-item">
+                Aus dem Land der Asen
+              </a>
+              <a href="/post/ueber-einzelne" class="navbar-item">
+                Über Einzelne
+              </a>
+              <a href="/texte" class="navbar-item">
+                Texte
+              </a>
+            </div>
+            <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+              <div class="navbar-item">
                 <div class="buttons">
                   <a class="button is-text">
                     <span class="icon is-small">
-                      <img src="/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                      <img src="/assets/img/sun.svg" id="theme-toggle-img">
                     </span>
                   </a>
                 </div>
               </div>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
             </div>
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a href="/post/aus-dem-land-der-asen" class="navbar-item">
-                  Aus dem Land der Asen
-                </a>
-                <a href="/post/ueber-einzelne" class="navbar-item">
-                  Über Einzelne
-                </a>
-                <a href="/texte" class="navbar-item">
-                  Texte
-                </a>
-              </div>
-              <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-text">
-                      <span class="icon is-small">
-                        <img src="/assets/img/sun.svg" id="theme-toggle-img">
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <section class="section">
-            <div class="columns is-centered">
-              <!-- Homepage Layout--><!--- Notes Feed Layout--><!--- Notes Layout-->
-              <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
-                <div class="note-page-section">
-                  <div><a onclick="window.history.back();">
-                      <h5 class="meta-title">← zurück</h5>
-                    </a>
-                  </div>
-                  <!--- List type Note Layout-->
-                  <h1>Modersohn und Zobel</h1>
-                  <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
-                  <div class="content">
-                    <p>Zur Sonne sah Zobel, weil diese gerade durch den Nebel spitzte, während er wieder einmal an seinem Brückengeländer stand. Es war ein naßkalter Novembertag. Er betrachtete die unter ihm verlaufende, vom Regen leicht glitzernde Straße. Das Kinn in die rechte Hand gestützt, blickte er auf die durchbrausenden Autos. Die Art und Weise um so verwunderlicher, da Zobel, das sei jetzt schon verraten, ein einfältiger Mensch war.
-                      Friedrich Zobel hatte zu dieser ihm unabänderlichen Begrenzung seiner geistigen Fähigkeiten eine gelassene Distanz entwickelt. Es hatte sich für ihn dadurch sein Leben lang nie ein Nachteil ergeben. Die Position des Dorftrottels war von einem anderen besetzt und ohne diesen hämischen Kleinkrieg, den dieser tagtäglich durchleben mußte, konnte er einen musterhaften Lebenswandel aufweisen.
-                      Er entwuchs einem umtriebigen Bauernhof und machte eine Schreinerlehre. Nicht aus gereifter Überlegung, nein, er sah nur gerade Holz vor sich, als die Berufsfrage anstand. Aus der Lehre wurde der Junge, noch bevor der Meister sich ein genaues Bild seiner Auffassungsgabe machen konnte, durch den Zweiten Weltkrieg gerissen. Sehr bald kam es zur Kriegsverwundung durch Granateneinschlag in unmittelbarer Nähe seines Wachpostens. Seitdem war er fast taub und sein rechter Arm war steif. Ein Umstand, über den er wie über alle anderen Kriegserlebnisse nie ein Wort verlor. Er kehrte als Held in die Heimat zurück und heiratete noch auf der ersten Hochwelle dieser Stimmung Gerti Häusler. Von ihr wird später noch die Rede sein.</p>
-                    <p>Zufällig war der Schreinermeister, der seinerzeit den jungen Friedrich als Lehrling einstellte, Gertis Onkel. Dieser nahm selbstredend den Unteroffizier a. D., Träger des Eisernen Kreuzes Zweiter Klasse, als Prokurist in seine Dienste, wobei die Ehrenauszeichnung werbewirksam hinter dem kleinen Schreibtisch von Zobel aufgehängt wurde. Auch der Erzähler wundert sich, daß bei Zobel am Ende beinahe jeder Schicksalsschlag sich zum Guten wendete.
-                      Rein äußerlich ein massiger Elefant, konnte er nicht nur weise schauen, auch sein Lachen suggerierte Verständnis und geistige Verarbeitung eines jeden besprochenen Sachverhaltes. Durch sein Leben zog sich eine Vielzahl weiterer Fehlinterpretationen bezüglich seiner Person.
-                      Zobel war ein gern gesehener Gast im einzigen Wirtshaus am Ort. Er hatte einen festen Platz am Stammtisch inne. Und das kam so: Zobel war der Zehner-Wechsel immer schon schwer gefallen. Für ihn waren Zahlen jenseits dieser ominösen Grenze nicht deshalb größer, nur weil sie länger waren. Und so – kein Wunder – entwickelte er nie eine rechte Beziehung zum Geld. Er galt als großzügig, nicht als schlechter Rechner.
-                      Noch ein Beispiel: Weil Zobel aus den bekannten Gründen schlecht hörte, beteiligte er sich aus einer Unsicherheit heraus wenig bis fast gar nicht an Gesprächen. Jedem anderen wäre dies als Unhöflichkeit ausgelegt worden. Er war ein guter Zuhörer.
-                      „So spielt das Leben eben manchem“, sagt der Dichter.</p>
-                    <p>Zurück zu ihm auf der Brücke. Er blickte wie gesagt den Autos nach und wie er so dastand und im Stile eines Zenmeisters das schlechter werdende Wetter ignorierte, spürte er plötzlich etwas im Rücken und hörte dazu leise eine Stimme. Auf die Idee, daß das, was ihn in den Rücken drückte, eine Pistole sein sollte, muß man, auch wenn man sich klüger wähnt, nicht kommen, und bedenkend, daß Zobel sowieso kein Wort verstanden hatte, war es logisch, daß er sich völlig angstfrei umdrehte. Der Dieb war verblüfft und schon jetzt begann seine Misere.
-                      Wer war der Dieb? Dieser Mensch hieß Jakob Modersohn. Auch ihn muß man näher kennen, um den weiteren Verlauf der Geschichte zu verstehen. Seiner Abstammung her kam er aus dem Schweizer Kanton Graubünden. Gegenüber seinen Altersgenossen zeigte er in der Grundschule stets gute Merkfähigkeit, so daß dann irgendein Lehrer von ihm irgendwann auf die Idee gekommen war, daß der Junge aufs Gymnasium und danach selbstredend studieren mußte, und dies dem alten Modersohn, übrigens ein seltener Dickkopf, auch einredete. Einmal beschlossen, ließ der Herr Papa von seiner Meinung nicht mehr ab. Der Sohn mußte gehorchen.
-                      Modersohns großer Fehler war, er probierte im Studium einfach zu viel aus: Schweizer Literatur von den Anfängen bis Dürrenmatt, Musikgeschichte der spanischen Oper, Geologie des Sankt Gotthard Massivs, im Anschluß daran die historisch vergleichende Verkehrsgeographie Süditaliens mit dem allseits beliebten Prof. Dr. Arthur Herold und kurz vor dem Abbruch seiner Studienzeit noch das Seminar „Das Gottesbild im Alten Testament“, irgendwie doch bezeichnend, oder?
-                      Über eine gescheiterte Liebesbeziehung mit einer bildhübschen, üppig gebauten Bankangestellten – sie hatte ihn mit dem Filialleiter betrogen und wurde daraufhin befördert – kam er zu seinem ersten Raub. Er wollte es der Bank heimzahlen.
-                      Der Erzähler versteht das auch nicht, aber es war so. Um es kurz zu machen: Bei der Art Geldverdienen blieb es.
-                      Beruflich bedingt hatte es ihn jetzt ins Schwäbische verschlagen mit bisher geringer Ausbeute und dementsprechender Laune. Es lief schlecht in der letzten Zeit und darum wollte er mal vorerst von den großen Sachen die Finger lassen. Der Typ auf der Brücke schien geeignet.
-                      Zobel wiederum erfaßte die Situation im Folgenden dennoch – ganz entgegen seiner Art – schnell und gründlich. So erklärte er ungeübt, man möge es ihm nachsehen, daß er keine Geldbörse mit sich führe, weil seine Gattin, die Gerti, ihm nicht … wegen der Wirtschaft.
-                      Modersohn verstand und kratzte sich mit der Pistole am Kopf. Es folgte betretenes Schweigen beiderseits, welches in ein schlechtes Gewissen bei Zobel mündete. Er war Zeit seines Lebens obrigkeitstreu gewesen. Nie in seinen Tagen hat er gegen irgendeine einmal anerkannte Autorität aufbegehrt. So war die Sache heute klar und es erschien ihm immer deutlicher, geradezu unabwendbar, beraubt zu werden. Es endete in dem kurzen Entschluß und der Aufforderung, ihm zu folgen. So sprach er zu seinem Gegenüber…</p>
-                  </div>
-                  <!-- Add backlinks to the current page --></div>
-              </div>
-              <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
-          </section>
-          <div id="copyright">
-            <p id="copyright-notice"> © 2024 •
-              <a href="/post/impressum">Impressum</a> </p>
           </div>
-        </main>
-      </body>
-    </html>
+        </nav>
+        <section class="section">
+          <div class="columns is-centered">
+            <!-- Homepage Layout--><!--- Notes Feed Layout--><!--- Notes Layout-->
+            <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+              <div class="note-page-section">
+                <div><a onclick="window.history.back();">
+                    <h5 class="meta-title">← zurück</h5>
+                  </a>
+                </div>
+                <!--- List type Note Layout-->
+                <h1>Modersohn und Zobel</h1>
+                <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+                <div class="content">
+                  <p>Zur Sonne sah Zobel, weil diese gerade durch den Nebel spitzte, während er wieder einmal an seinem Brückengeländer stand. Es war ein naßkalter Novembertag. Er betrachtete die unter ihm verlaufende, vom Regen leicht glitzernde Straße. Das Kinn in die rechte Hand gestützt, blickte er auf die durchbrausenden Autos. Die Art und Weise um so verwunderlicher, da Zobel, das sei jetzt schon verraten, ein einfältiger Mensch war.
+                    Friedrich Zobel hatte zu dieser ihm unabänderlichen Begrenzung seiner geistigen Fähigkeiten eine gelassene Distanz entwickelt. Es hatte sich für ihn dadurch sein Leben lang nie ein Nachteil ergeben. Die Position des Dorftrottels war von einem anderen besetzt und ohne diesen hämischen Kleinkrieg, den dieser tagtäglich durchleben mußte, konnte er einen musterhaften Lebenswandel aufweisen.
+                    Er entwuchs einem umtriebigen Bauernhof und machte eine Schreinerlehre. Nicht aus gereifter Überlegung, nein, er sah nur gerade Holz vor sich, als die Berufsfrage anstand. Aus der Lehre wurde der Junge, noch bevor der Meister sich ein genaues Bild seiner Auffassungsgabe machen konnte, durch den Zweiten Weltkrieg gerissen. Sehr bald kam es zur Kriegsverwundung durch Granateneinschlag in unmittelbarer Nähe seines Wachpostens. Seitdem war er fast taub und sein rechter Arm war steif. Ein Umstand, über den er wie über alle anderen Kriegserlebnisse nie ein Wort verlor. Er kehrte als Held in die Heimat zurück und heiratete noch auf der ersten Hochwelle dieser Stimmung Gerti Häusler. Von ihr wird später noch die Rede sein.</p>
+                  <p>Zufällig war der Schreinermeister, der seinerzeit den jungen Friedrich als Lehrling einstellte, Gertis Onkel. Dieser nahm selbstredend den Unteroffizier a. D., Träger des Eisernen Kreuzes Zweiter Klasse, als Prokurist in seine Dienste, wobei die Ehrenauszeichnung werbewirksam hinter dem kleinen Schreibtisch von Zobel aufgehängt wurde. Auch der Erzähler wundert sich, daß bei Zobel am Ende beinahe jeder Schicksalsschlag sich zum Guten wendete.
+                    Rein äußerlich ein massiger Elefant, konnte er nicht nur weise schauen, auch sein Lachen suggerierte Verständnis und geistige Verarbeitung eines jeden besprochenen Sachverhaltes. Durch sein Leben zog sich eine Vielzahl weiterer Fehlinterpretationen bezüglich seiner Person.
+                    Zobel war ein gern gesehener Gast im einzigen Wirtshaus am Ort. Er hatte einen festen Platz am Stammtisch inne. Und das kam so: Zobel war der Zehner-Wechsel immer schon schwer gefallen. Für ihn waren Zahlen jenseits dieser ominösen Grenze nicht deshalb größer, nur weil sie länger waren. Und so – kein Wunder – entwickelte er nie eine rechte Beziehung zum Geld. Er galt als großzügig, nicht als schlechter Rechner.
+                    Noch ein Beispiel: Weil Zobel aus den bekannten Gründen schlecht hörte, beteiligte er sich aus einer Unsicherheit heraus wenig bis fast gar nicht an Gesprächen. Jedem anderen wäre dies als Unhöflichkeit ausgelegt worden. Er war ein guter Zuhörer.
+                    „So spielt das Leben eben manchem“, sagt der Dichter.</p>
+                  <p>Zurück zu ihm auf der Brücke. Er blickte wie gesagt den Autos nach und wie er so dastand und im Stile eines Zenmeisters das schlechter werdende Wetter ignorierte, spürte er plötzlich etwas im Rücken und hörte dazu leise eine Stimme. Auf die Idee, daß das, was ihn in den Rücken drückte, eine Pistole sein sollte, muß man, auch wenn man sich klüger wähnt, nicht kommen, und bedenkend, daß Zobel sowieso kein Wort verstanden hatte, war es logisch, daß er sich völlig angstfrei umdrehte. Der Dieb war verblüfft und schon jetzt begann seine Misere.
+                    Wer war der Dieb? Dieser Mensch hieß Jakob Modersohn. Auch ihn muß man näher kennen, um den weiteren Verlauf der Geschichte zu verstehen. Seiner Abstammung her kam er aus dem Schweizer Kanton Graubünden. Gegenüber seinen Altersgenossen zeigte er in der Grundschule stets gute Merkfähigkeit, so daß dann irgendein Lehrer von ihm irgendwann auf die Idee gekommen war, daß der Junge aufs Gymnasium und danach selbstredend studieren mußte, und dies dem alten Modersohn, übrigens ein seltener Dickkopf, auch einredete. Einmal beschlossen, ließ der Herr Papa von seiner Meinung nicht mehr ab. Der Sohn mußte gehorchen.
+                    Modersohns großer Fehler war, er probierte im Studium einfach zu viel aus: Schweizer Literatur von den Anfängen bis Dürrenmatt, Musikgeschichte der spanischen Oper, Geologie des Sankt Gotthard Massivs, im Anschluß daran die historisch vergleichende Verkehrsgeographie Süditaliens mit dem allseits beliebten Prof. Dr. Arthur Herold und kurz vor dem Abbruch seiner Studienzeit noch das Seminar „Das Gottesbild im Alten Testament“, irgendwie doch bezeichnend, oder?
+                    Über eine gescheiterte Liebesbeziehung mit einer bildhübschen, üppig gebauten Bankangestellten – sie hatte ihn mit dem Filialleiter betrogen und wurde daraufhin befördert – kam er zu seinem ersten Raub. Er wollte es der Bank heimzahlen.
+                    Der Erzähler versteht das auch nicht, aber es war so. Um es kurz zu machen: Bei der Art Geldverdienen blieb es.
+                    Beruflich bedingt hatte es ihn jetzt ins Schwäbische verschlagen mit bisher geringer Ausbeute und dementsprechender Laune. Es lief schlecht in der letzten Zeit und darum wollte er mal vorerst von den großen Sachen die Finger lassen. Der Typ auf der Brücke schien geeignet.
+                    Zobel wiederum erfaßte die Situation im Folgenden dennoch – ganz entgegen seiner Art – schnell und gründlich. So erklärte er ungeübt, man möge es ihm nachsehen, daß er keine Geldbörse mit sich führe, weil seine Gattin, die Gerti, ihm nicht … wegen der Wirtschaft.
+                    Modersohn verstand und kratzte sich mit der Pistole am Kopf. Es folgte betretenes Schweigen beiderseits, welches in ein schlechtes Gewissen bei Zobel mündete. Er war Zeit seines Lebens obrigkeitstreu gewesen. Nie in seinen Tagen hat er gegen irgendeine einmal anerkannte Autorität aufbegehrt. So war die Sache heute klar und es erschien ihm immer deutlicher, geradezu unabwendbar, beraubt zu werden. Es endete in dem kurzen Entschluß und der Aufforderung, ihm zu folgen. So sprach er zu seinem Gegenüber…</p>
+                </div>
+                <!-- Add backlinks to the current page --></div>
+            </div>
+            <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+        </section>
+        <div id="copyright">
+          <p id="copyright-notice"> © 2024 •
+            <a href="/post/impressum">Impressum</a> </p>
+        </div>
+      </main>
+    </body>
+  </html>

@@ -1,160 +1,126 @@
-<!-------------------------------------------------------------------------------------
-*
-* MIT License
-* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in all
-* copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Hiran Venugopalan" property="og:site_name" />
-    <meta
-        content="Product and Type Designer | UI UX | Design Mentoring"
-        property="og:description">
-      <meta content="http://localhost:4000/about/" property="article:author">
-      <meta property="og:image" content="../assets/img/OGImg.png">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
-        rel="stylesheet"><meta content="In Jötunheim" property="og:title">
-      <meta content="article" property="og:type">
-      <meta content="http://localhost:4000/texte/in-j%C3%B6tunheim" property="og:url"><title>In Jötunheim - Verlag Federwerkstatt</title>
-      <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
-      <link rel="canonical" href="http://localhost:4000/texte/in-j%C3%B6tunheim" />
-      <link rel="apple-touch-icon" href="/assets/img/profile.png">
-      <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16" />
-      <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default" />
-      <link href="/assets/css/main.css" rel="stylesheet" media="all" class="default" />
-      <link href="/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
-      <link href="/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
-      <!--[if IE]>
-        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
-      <![endif]-->
-      <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
-      <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
-    </head>
-    <body>
-      <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" style="padding: 0;"; href="/index.html">
-              <div class="logo">
-                <img src='/assets/img/headerpic.gif'/>
+    <meta content="http://localhost:4000/about/" property="article:author">
+    <meta property="og:image" content="../assets/img/OGImg.png"><meta content="In Jötunheim" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://localhost:4000/texte/in-j%C3%B6tunheim" property="og:url"><title>In Jötunheim - Verlag Federwerkstatt</title>
+    <link rel="canonical" href="http://localhost:4000/texte/in-j%C3%B6tunheim" />
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default" />
+    <link href="/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" style="padding: 0;"; href="/index.html">
+            <div class="logo">
+              <img src='/assets/img/headerpic.gif'/>
+            </div>
+            <script src="/assets/js/modeswitcher.js"></script>
+            <script src="/assets/js/Hamburger.js"></script>
+            <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                  </span>
+                </a>
               </div>
-              <script src="/assets/js/modeswitcher.js"></script>
-              <script src="/assets/js/Hamburger.js"></script>
-              <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            </div>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a href="/post/aus-dem-land-der-asen" class="navbar-item">
+                Aus dem Land der Asen
+              </a>
+              <a href="/post/ueber-einzelne" class="navbar-item">
+                Über Einzelne
+              </a>
+              <a href="/texte" class="navbar-item">
+                Texte
+              </a>
+            </div>
+            <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+              <div class="navbar-item">
                 <div class="buttons">
                   <a class="button is-text">
                     <span class="icon is-small">
-                      <img src="/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                      <img src="/assets/img/sun.svg" id="theme-toggle-img">
                     </span>
                   </a>
                 </div>
               </div>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
             </div>
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a href="/post/aus-dem-land-der-asen" class="navbar-item">
-                  Aus dem Land der Asen
-                </a>
-                <a href="/post/ueber-einzelne" class="navbar-item">
-                  Über Einzelne
-                </a>
-                <a href="/texte" class="navbar-item">
-                  Texte
-                </a>
-              </div>
-              <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-text">
-                      <span class="icon is-small">
-                        <img src="/assets/img/sun.svg" id="theme-toggle-img">
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <section class="section">
-            <div class="columns is-centered">
-              <!-- Homepage Layout--><!--- Notes Feed Layout--><!--- Notes Layout-->
-              <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
-                <div class="note-page-section">
-                  <div><a onclick="window.history.back();">
-                      <h5 class="meta-title">← zurück</h5>
-                    </a>
-                  </div>
-                  <!--- List type Note Layout-->
-                  <h1>In Jötunheim</h1>
-                  <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
-                  <div class="content">
-                    <p>Der Wald schneidet Grimassen<br />
-                      in den fetten Nebelschwaden<br />
-                      Lehrt einen Fürchten<br />
-                      von Grund auf</p>
-                    <p>Im rostigen Moos<br />
-                      liegen schwere Bäume<br />
-                      zerfasert gebrochen<br />
-                      und doch aus Eisen</p>
-                    <p>Manchmal sei es wie ein großes Atmen dort<br />
-                      das über dem polternden Prasseln zu hören ist<br />
-                      von den Kerlaugar<br />
-                      den Grenzflüssen eiskalt<br />
-                      zwei an der Zahl<br />
-                      zwischen Midgard und Jötunheim</p>
-                    <p>Die Riesen<br />
-                      sie kamen von weit hierher<br />
-                      man kann ihre Marschroute sehen<br />
-                      wenn man sich dorthin wagt<br />
-                      breit so weit das Auge reicht<br />
-                      von weit von dort<br />
-                      wo nur blaues Eis sich Weg bahnt</p>
-                    <p>Einige haben alles gefressen bis hierher<br />
-                      mit ihren riesigen Mäulern<br />
-                      über die Erde schabend<br />
-                      dicken Speichel sabbernd</p>
-                    <p>Zähne lassen sich finden häusergroß<br />
-                      die ihnen im Blutrausch<br />
-                      aus ihren entzündeten Kiefern gebrochen<br />
-                      berichten Zeugen<br />
-                      die nicht verrückt wurden<br />
-                      beim Anblick der rotunterlaufenen Augen<br />
-                      der Kraft die alles zerstört</p>
-                  </div>
-                  <!-- Add backlinks to the current page --></div>
-              </div>
-              <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
-          </section>
-          <div id="copyright">
-            <p id="copyright-notice"> © 2024 •
-              <a href="/post/impressum">Impressum</a> </p>
           </div>
-        </main>
-      </body>
-    </html>
+        </nav>
+        <section class="section">
+          <div class="columns is-centered">
+            <!-- Homepage Layout--><!--- Notes Feed Layout--><!--- Notes Layout-->
+            <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+              <div class="note-page-section">
+                <div><a onclick="window.history.back();">
+                    <h5 class="meta-title">← zurück</h5>
+                  </a>
+                </div>
+                <!--- List type Note Layout-->
+                <h1>In Jötunheim</h1>
+                <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+                <div class="content">
+                  <p>Der Wald schneidet Grimassen<br />
+                    in den fetten Nebelschwaden<br />
+                    Lehrt einen Fürchten<br />
+                    von Grund auf</p>
+                  <p>Im rostigen Moos<br />
+                    liegen schwere Bäume<br />
+                    zerfasert gebrochen<br />
+                    und doch aus Eisen</p>
+                  <p>Manchmal sei es wie ein großes Atmen dort<br />
+                    das über dem polternden Prasseln zu hören ist<br />
+                    von den Kerlaugar<br />
+                    den Grenzflüssen eiskalt<br />
+                    zwei an der Zahl<br />
+                    zwischen Midgard und Jötunheim</p>
+                  <p>Die Riesen<br />
+                    sie kamen von weit hierher<br />
+                    man kann ihre Marschroute sehen<br />
+                    wenn man sich dorthin wagt<br />
+                    breit so weit das Auge reicht<br />
+                    von weit von dort<br />
+                    wo nur blaues Eis sich Weg bahnt</p>
+                  <p>Einige haben alles gefressen bis hierher<br />
+                    mit ihren riesigen Mäulern<br />
+                    über die Erde schabend<br />
+                    dicken Speichel sabbernd</p>
+                  <p>Zähne lassen sich finden häusergroß<br />
+                    die ihnen im Blutrausch<br />
+                    aus ihren entzündeten Kiefern gebrochen<br />
+                    berichten Zeugen<br />
+                    die nicht verrückt wurden<br />
+                    beim Anblick der rotunterlaufenen Augen<br />
+                    der Kraft die alles zerstört</p>
+                </div>
+                <!-- Add backlinks to the current page --></div>
+            </div>
+            <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+        </section>
+        <div id="copyright">
+          <p id="copyright-notice"> © 2024 •
+            <a href="/post/impressum">Impressum</a> </p>
+        </div>
+      </main>
+    </body>
+  </html>
